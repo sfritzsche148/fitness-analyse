@@ -17,15 +17,20 @@ passbtn.addEventListener('click', function() {
 
 // Schritte tabelle
 function Schritte() {
+    // Hier werden die P Tags reingeschrieben
     let schrittetable = document.getElementById('schrittetable');
+
+    // P Tag erstellt
     let p = document.createElement('p');
+
+    // Anzahl der Schritte
     let schrittcount = document.getElementById('schrittcount').value;
 
-    let d = new Date().getDate();
-    let month = new Date().getMonth();
-    let year = new Date().getFullYear();
+    let date = document.getElementById('date').value;
 
-    p.innerHTML = d + '.'+ month + '.' + year + ' ' + schrittcount;
+
+    p.innerHTML = date + ' ' + schrittcount;
 
     schrittetable.appendChild(p);
+
 }
