@@ -14,23 +14,3 @@ passbtn.addEventListener('click', function() {
         alert('Wrong Password');
     }
 })
-
-// Schritte tabelle
-function Schritte() {
-    // Hier werden die P Tags reingeschrieben
-    let schrittetable = document.getElementById('schrittetable');
-
-    // P Tag erstellt
-    let p = document.createElement('p');
-
-    // Anzahl der Schritte
-    let schrittcount = document.getElementById('schrittcount').value;
-
-    let date = document.getElementById('date').value;
-
-
-    p.innerHTML = date + ' ' + schrittcount;
-
-    schrittetable.appendChild(p);
-
-}
